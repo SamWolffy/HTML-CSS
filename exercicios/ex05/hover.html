@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div:hover {
+            color: brown;
+        }
+
+        div > p { /*significa que é filho de div*/
+            display: none;
+        }
+
+        /* div:hover > p { */
+            display: block;
+            color: white;
+            background-color: brown;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>exemplo de hover</h1>
+    <p>passe o maouse ali</p>
+    <div>
+        passe o maouse aqui
+        <p >TEXTO ESCONDIDO</p>
+    </div>
+
+    <p>fim</p>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        a::after {
+            content: '[link]';
+            text-decoration: none;
+            font-weight: bold;
+            color: rgb(146, 130, 130);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>personalizando links</h1>
+    <ul>
+        <li>
+            <a href="https://calendar.google.com/calendar/u/0/r/week/2026/1/11?pli=1" target="_blank">
+                Repositorio github
+        </a>
+    </li>
+        <li>
+            <a href="https://calendar.google.com/calendar/u/0/r/week/2026/1/11?pli=1" target="_blank">
+                Canal do youtube
+            </a>
+        </li>
+        <li>
+            <a href="https://calendar.google.com/calendar/u/0/r/week/2026/1/11?pli=1">
+                Site do curso
+        </a>
+    </li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <div>
+            <label for="inum">Numero:</label>
+            <input type="range" name="num" id="inum" min="0" max="5" oninput="ival.innerHTML = Number(inum.value)">
+            <output id="ival">
+                5
+            </output>
+            <!-- output e oniput servem pra mostrar, é quase um sout -->
+        </div>
+
+        <div>
+            <input type="submit" name="enviar" id="ienviar">
+            <input type="reset" name="apagar" id="iapagar">
+        </div>
+    </form>
+
+    <form action="#">
+        <div>
+            <label for="iano">Ano de nascimento:</label>
+            <input type="number" name="ano" id="iano" min="1900" max="2026" oninput="calcIdade()">
+        </div>
+
+        <div>
+            <label for="iidade">Sua idade é:</label>
+            <output id="iidade">0</output>
+        </div>
+
+        <div>
+            <input type="submit" name="enviar" id="ienviar">
+            <input type="reset" name="apagar" id="iapagar">
+        </div>
+    </form>
+
+    <script>
+        function calcIdade() {
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
+
+</body>
+
+</html>

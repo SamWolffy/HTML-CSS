@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="cadastro.html" method="get">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+
+
+            <div>
+                <label for="iemail">Email</label>
+                <input type="email" name="email" id="iemail" required>
+            </div>
+
+            <div>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" pattern="^[0-9]{4}-[0-9]{4}$" required>
+            </div>
+        </fieldset>
+
+        <div>
+            <input type="submit" name="" id="">
+            <input type="reset" name="" id="">
+        </div>
+    </form>
+</body>
+
+</html>
